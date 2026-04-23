@@ -1,4 +1,4 @@
-# Steam Player Engagement Analysis (Ongoing Thesis)
+# Steam Player Engagement Analysis
 
 ⚠️ This repository contains an **ongoing graduate thesis project**. Analysis and results will continue to be updated as the project progresses.
 
