@@ -40,25 +40,6 @@ These variables allow us to analyze both **player behavior and game characterist
 
 ---
 
-# Current Project Status
-
-This thesis is currently in progress. The work completed so far includes:
-
-- Data cleaning and preprocessing
-- Exploratory data analysis (EDA)
-- Feature engineering and log transformations
-- Multicollinearity diagnostics
-- Baseline regression modeling
-- Two-stage engagement modeling
-- Regularization testing (Ridge and Lasso)
-- Time-aware validation
-- Feature importance analysis
-- Genre interaction analysis
-
-Future work will focus on refining the modeling framework and synthesizing insights from the results.
-
----
-
 # Key Early Findings
 
 Initial modeling results suggest that **community engagement metrics are the strongest predictors of long-term playtime**.
