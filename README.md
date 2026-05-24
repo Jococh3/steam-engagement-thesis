@@ -1,7 +1,5 @@
 # Steam Player Engagement Analysis
 
-⚠️ This repository contains an **ongoing graduate thesis project**. Analysis and results will continue to be updated as the project progresses.
-
 The goal of this project is to understand how early player activity, community response, and game characteristics relate to **lifetime playtime and sustained engagement**.
 
 This thesis is **ongoing and will continue to evolve as additional modeling, validation, and interpretation are completed throughout the semester.**
