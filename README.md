@@ -1,91 +1,36 @@
 # Steam Player Engagement Analysis
 
-The goal of this project is to understand how early player activity, community response, and game characteristics relate to **lifetime playtime and sustained engagement**.
+A data science thesis examining how early player activity, community response, and game characteristics relate to long-term playtime for games released on Steam.
 
----
+## Research question
 
-# Research Question
+Which early signals are associated with sustained player engagement? The analysis considers early playtime, review activity, recommendations, peak concurrent players, genre, and game characteristics.
 
-What early indicators best predict long-term engagement for games released on Steam?
+## Data
 
-Specifically, this project investigates whether factors such as:
+The project uses a Steam games, reviews, and player activity dataset described in the thesis materials as covering 2023–2024. The repository contains eight weekly progress notebooks and a thesis paper draft; the dataset itself is not included, and the current README does not identify a source URL or license. Add the exact dataset citation and usage terms before claiming that a fresh checkout is fully reproducible.
 
-- Early player activity
-- Review activity
-- Player recommendations
-- Game genre
-- Launch traction (peak concurrent players)
+## Methods
 
-can help explain **why some games maintain long-term engagement while others quickly decline.**
-
----
-
-# Dataset
-
-**Dataset:** Steam Games, Reviews, and Player Activity Dataset (2023–2024)
-
-The dataset contains metadata and player engagement metrics for thousands of games available on Steam.
-
-Key variables include:
-
-- Estimated owners
-- Peak concurrent players (CCU)
-- Player reviews (positive and negative)
-- Player recommendations
-- Average playtime (two weeks and lifetime)
-- Genre classifications
-- Game pricing and release information
-
-These variables allow us to analyze both **player behavior and game characteristics**.
-
----
-
-# Key Early Findings
-
-Initial modeling results suggest that **community engagement metrics are the strongest predictors of long-term playtime**.
-
-Important predictors include:
-
-- Player recommendations
-- Total review activity
-- Early playtime shortly after release
-
-Early engagement also appears to influence some genres more strongly than others. For example, **Free-to-Play and Casual games show stronger relationships between early engagement and long-term playtime**.
-
----
-
-
-# Methods Used
-
-The analysis uses Python and standard data science tools including:
-
-- pandas
-- numpy
-- scikit-learn
-- statsmodels
-- matplotlib
-
-Modeling techniques include:
+The notebooks document exploratory analysis and modeling with Python, pandas, NumPy, scikit-learn, statsmodels, and matplotlib. Methods described in the project include:
 
 - Linear regression
-- Two-stage modeling (logistic + regression)
-- Regularized regression (Ridge / Lasso)
+- Two-stage modeling (logistic regression followed by regression)
+- Ridge and Lasso regularization
 - Time-based validation
 - Interaction analysis
 
----
+## Findings summarized in the project
 
-# Reproducibility
+The current project summary identifies recommendations, review activity, and early playtime as important predictors of lifetime playtime. It also reports stronger relationships between early engagement and long-term playtime for Free-to-Play and Casual games.
 
-All analysis is conducted in Jupyter notebooks and can be reproduced using the provided code.
+These are associations in observational data; they do not establish that early engagement causes long-term engagement. The current summary does not include a compact table of numerical estimates or validation scores, so those should be added from the final analysis before using quantitative claims.
 
-The project is structured to document the **progression of the thesis week by week**.
+## Repository contents
 
----
+- `Weekly Updates - Week 1.ipynb` through `Weekly Updates - Week 8.ipynb` — progress notebooks
+- `Cochran_Thesis Paper Draft.docx` — thesis draft
 
-# Author
+## Reproducibility status
 
-Joshua Cochran  
-INFO-I 492 – Data Science Capstone  
-Indiana University  
-
+A fresh checkout does not include the source dataset or a dependency file, and the repository does not provide a single final run command. Reproducing the analysis requires obtaining the cited dataset and matching the analysis environment. A polished release should add the source and license citation, a pinned environment file, and a concise final notebook or script alongside the preserved weekly work.
